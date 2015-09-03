@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans)
+
+$defaultColor: #ffffff
+$defaultGreen: #61ad55
+$defaultRed: #be3542
+
+body
+  font-family: 'Open Sans', sans-serif
+  color: $defaultColor
+
+.img-full-width
+  width: 100%
+  height: auto
+
+.bgvideo
+  position: fixed
+  right: 0
+  bottom: 0
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
+  z-index: -9999
+
+.comment-block
+  display: none
+  position: fixed
+  right: 0
+  bottom: 0
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
+  z-index: 1
+  background: rgba(0,0,0, .5)
+  .comment-block_info
+    margin: 100px 0 10px
+    .name
+      margin-top: 0
+    .view-all
+      a
+        color: $defaultColor
+        text-decoration: none
+    form
+      margin-top: 30px
+      .type-message
+        background: transparent
+        border: transparent
+        border-bottom: 1px solid $defaultColor
+        line-height: 34px
+        padding: 0 10px
+        width: 100%
+      .send-message-btn
+        text-transform: uppercase
+        background-color: #ee9b2f
+        width: 100%
+        border-radius: 0
+        transition: .3s all
+
+header
+  .navbar-main
+    padding: 10px
+    border: none
+    background: rgba(0,0,0, .7)
+    .user-nav
+      .user
+        white-space: nowrap
+        span
+          display: block
+        .user_img
+          float: left
+          margin-right: 20px
+        .user_text
+          line-height: 40px
+          font-size: 30px
+          font-weight: bold
+          color: $defaultColor
+        &:hover, &:focus
+          background: transparent
+    .custom-nav
+      a
+        color: $defaultColor !important
+        font-size: 30px
+      .comments
+        .fa:hover, a:focus .fa, .fa:focus
+          color: $defaultGreen
+        &:focus
+          .fa
+            color: $defaultGreen
+      .likes
+        .fa:hover, .fa:focus
+          color: $defaultRed
+        &:focus
+          .fa
+            color: $defaultRed
+      .edit
+        .fa:hover, .fa:focus
+          color: $defaultColor
+
+
+
+@media only screen and (max-width: 767px)
+  header
+    .navbar-main
+      .navbar-right
+        float: right !important
+      .navbar-left
+        float: left !important
+      .user-nav
+        .user
+          .user_img
+            margin-right: 10px
+          .user_text
+            line-height: 40px
+            font-size: 18px
+      .custom-nav
+        margin-right: 0
+        li
+          display: inline-block
+          text-align: center
+          a
+            font-size: 15px
+  .comment-block
+    .comment-block_info
+      h1
+        font-size: 17px
+      p
+        font-size: 14px
+      .view-all
+        font-size: 16px
+
+@media only screen and (max-width: 500px)
+  header
+    .navbar-main
+      .custom-nav
+        width: 100%
+        margin: 0
+  .comment-block
+    .comment-block_info
+      margin: 130px 0 10px

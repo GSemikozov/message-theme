@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff; }
+
+.img-full-width {
+  width: 100%;
+  height: auto; }
+
+.bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999; }
+
+.comment-block {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5); }
+  .comment-block .comment-block_info {
+    margin: 100px 0 10px; }
+    .comment-block .comment-block_info .name {
+      margin-top: 0; }
+    .comment-block .comment-block_info .view-all a {
+      color: #ffffff;
+      text-decoration: none; }
+    .comment-block .comment-block_info form {
+      margin-top: 30px; }
+      .comment-block .comment-block_info form .type-message {
+        background: transparent;
+        border: transparent;
+        border-bottom: 1px solid #ffffff;
+        line-height: 34px;
+        padding: 0 10px;
+        width: 100%; }
+      .comment-block .comment-block_info form .send-message-btn {
+        text-transform: uppercase;
+        background-color: #ee9b2f;
+        width: 100%;
+        border-radius: 0;
+        transition: .3s all; }
+
+header .navbar-main {
+  padding: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0.7); }
+  header .navbar-main .user-nav .user {
+    white-space: nowrap; }
+    header .navbar-main .user-nav .user span {
+      display: block; }
+    header .navbar-main .user-nav .user .user_img {
+      float: left;
+      margin-right: 20px; }
+    header .navbar-main .user-nav .user .user_text {
+      line-height: 40px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #ffffff; }
+    header .navbar-main .user-nav .user:hover, header .navbar-main .user-nav .user:focus {
+      background: transparent; }
+  header .navbar-main .custom-nav a {
+    color: #ffffff !important;
+    font-size: 30px; }
+  header .navbar-main .custom-nav .comments .fa:hover, header .navbar-main .custom-nav .comments a:focus .fa, header .navbar-main .custom-nav .comments .fa:focus {
+    color: #61ad55; }
+  header .navbar-main .custom-nav .comments:focus .fa {
+    color: #61ad55; }
+  header .navbar-main .custom-nav .likes .fa:hover, header .navbar-main .custom-nav .likes .fa:focus {
+    color: #be3542; }
+  header .navbar-main .custom-nav .likes:focus .fa {
+    color: #be3542; }
+  header .navbar-main .custom-nav .edit .fa:hover, header .navbar-main .custom-nav .edit .fa:focus {
+    color: #ffffff; }
+
+@media only screen and (max-width: 767px) {
+  header .navbar-main .navbar-right {
+    float: right !important; }
+  header .navbar-main .navbar-left {
+    float: left !important; }
+  header .navbar-main .user-nav .user .user_img {
+    margin-right: 10px; }
+  header .navbar-main .user-nav .user .user_text {
+    line-height: 40px;
+    font-size: 18px; }
+  header .navbar-main .custom-nav {
+    margin-right: 0; }
+    header .navbar-main .custom-nav li {
+      display: inline-block;
+      text-align: center; }
+      header .navbar-main .custom-nav li a {
+        font-size: 15px; }
+  .comment-block .comment-block_info h1 {
+    font-size: 17px; }
+  .comment-block .comment-block_info p {
+    font-size: 14px; }
+  .comment-block .comment-block_info .view-all {
+    font-size: 16px; } }
+
+@media only screen and (max-width: 500px) {
+  header .navbar-main .custom-nav {
+    width: 100%;
+    margin: 0; }
+  .comment-block .comment-block_info {
+    margin: 130px 0 10px; } }
